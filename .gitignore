@@ -1,0 +1,26 @@
+# Datos e imágenes (se versionan solo manifiestos; ver docs/05-datos-dataset.md)
+data/raw/
+data/flights/
+*.jpg
+*.jpeg
+*.png
+!docs/**/*.png
+
+# Modelos pesados (versionar solo el JSON de metadata)
+*.engine
+*.onnx
+*.pt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venvs/
+
+# Entrenamiento
+runs/
+wandb/
+
+# Sistema
+.DS_Store
+*.swp
